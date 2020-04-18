@@ -29,7 +29,7 @@ const searchTweets = async function(hashtag) {
 
 const analyzeTweets = async function(tweetData) {
     const response = await axios({
-      url: "https://afctextanalytics.cognitiveservices.azure.com//text/analytics/v2.1/sentiment",
+      url: "https://<<TEXT ANALYTICS RESOURCE NAME>>.cognitiveservices.azure.com//text/analytics/v2.1/sentiment",
       method: 'post',
       headers: {
         'Ocp-Apim-Subscription-Key': process.env.COGNITIVE_SERVICE_API_KEY
